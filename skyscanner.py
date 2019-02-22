@@ -29,7 +29,6 @@ sel_soup = BeautifulSoup(html, 'html.parser')
 #does the same thing as above just with find_all
 # print(sel_soup.finda_all("div", class_="date"))
 
-# this prints a bunch of blank "" so I think the $ is messing pu the .get_text() function
 prices = [p.get_text() for p in sel_soup.select("div.price")]
 print("-"*20)
 # print(prices)
